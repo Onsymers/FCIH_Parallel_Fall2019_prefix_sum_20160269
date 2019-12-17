@@ -4,7 +4,18 @@
 حسناء علاءالدين عبدالله 20160133
 
 
-we see how many threads  are availble, and we devide the array indexes by the numer of thread,then,the prefix sum are executed thread by thread
-the project compare the time of excution in : (parallel and serial) algorithms.
+we do prefix sum in two algorithms :
+first ---> serial_sum:
+  we sum all prefix numbers to an index number by number.
+
+second ---> parallel_sum:
+  fisrt determine a range (start - end) to calculate the prefix sum in that range 
+  by dividing the length of the range on the the number of available threads in the procerssor.
+  then each thread sum patch_size of the all range 
+  then sum all the results of the threads tasks to determine the prefix sum of the the range.
+  
+finally :
+   we compare the time of excution in using sarial_sum and parallel_sum algorithms.
+
 
 
