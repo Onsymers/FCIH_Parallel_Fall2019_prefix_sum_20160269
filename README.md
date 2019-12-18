@@ -9,8 +9,8 @@ first ---> serial_sum:
   we sum all prefix numbers to an index number by number.
 
 second ---> parallel_sum:
-  fisrt determine a range (start - end) to calculate the prefix sum in that range 
-  by dividing the length of the range on the the number of available threads in the procerssor.
+  first determine a range (start - end) to calculate the prefix sum in that range 
+  by dividing the length of the range on the number of available threads in the processor.
   then each thread sum patch_size of the all range 
   then sum all the results of the threads tasks to determine the prefix sum of the the range.
   
